@@ -1,0 +1,75 @@
+body {
+  font-family: Arial;
+  background: #f4f6f8;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ================= CHART LAYOUT ================= */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* more spacing */
+  padding: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* 🔥 IMPORTANT FIX */
+canvas {
+  width: 100% !important; /* responsive */
+  max-width: 500px; /* bigger size */
+  height: 350px !important; /* increased height */
+}
+
+/* ================= ZONES ================= */
+#zones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ================= CARDS ================= */
+.card {
+  width: 260px;
+  background: white;
+  margin: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* 👈 hover feels interactive */
+  transition: transform 0.2s; /* 👈 smooth */
+}
+
+/* 🔥 hover effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ================= COLORS ================= */
+.high {
+  border-left: 6px solid red;
+}
+.medium {
+  border-left: 6px solid orange;
+}
+.low {
+  border-left: 6px solid green;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .charts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}

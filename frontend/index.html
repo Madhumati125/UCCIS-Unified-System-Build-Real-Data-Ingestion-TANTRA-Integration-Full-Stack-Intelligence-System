@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UCCIS Dashboard</title>
+
+    <!-- ✅ Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>🌆 UCCIS Intelligence Dashboard</h1>
+
+    <div style="text-align: center; margin-bottom: 10px">
+      <button onclick="loadData()">🔄 Refresh</button>
+    </div>
+
+    <!-- 📊 Charts -->
+    <div class="charts">
+      <canvas id="riskChart"></canvas>
+      <canvas id="predictionChart"></canvas>
+      <canvas id="decisionChart"></canvas>
+    </div>
+
+    <!-- 🧾 Cards -->
+    <div id="zones"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,1 +1,12 @@
-# UCCIS-Unified-System-Build-Real-Data-Ingestion-TANTRA-Integration-Full-Stack-Intelligence-System
+# UCCIS Unified System
+
+## SYSTEM FLOW
+
+UI → API → Backend → Intelligence → Storage → Response
+
+## RUN
+
+npm install
+npm start
+
+Open frontend/index.html
